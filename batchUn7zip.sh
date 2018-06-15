@@ -1,6 +1,6 @@
 #/usr/bin/bash
 
-for file in *.7z *.7z.001
+for file in *.7z
 do
 	while IFS='' read -r line || [[ -n "$line" ]]; do
 		7z x -aoa -p"$line" "$file"
